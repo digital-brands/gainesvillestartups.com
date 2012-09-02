@@ -1,0 +1,45 @@
+nav#main-navigation {
+    font-family: @headingsFontFamily;
+    height: @baseLineHeight * 3;
+    line-height: @baseLineHeight * 3;
+    background-color: @black;
+    margin: 0;
+    margin-bottom: @baseLineHeight * 2;
+    padding: 0;
+    border-bottom: 1px solid @navbarBorder;
+    width: 100%;
+    z-index: @zindexFixedNavbar;
+    .box-shadow( 0px 0px 2px @gray );
+    #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
+}
+
+/* LOGO
+***************************************************************************/
+nav #logo, nav #logo span {
+    font-family: @headingsFontFamily;
+    font-size: @baseLineHeight * 1.5;
+    text-decoration: none;
+}
+
+nav #gainesville {
+    color: @orange;
+}
+
+nav #startups {
+    color: #444;
+}
+
+/* LOGIN
+***************************************************************************/
+nav#main-navigation #login {
+    color: @gray;
+}
+
+nav#main-navigation #login a {
+    color: @gray;
+}
+
+
+nav#main-navigation #login a:hover {
+    color: @grayLight;
+}

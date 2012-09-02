@@ -1,0 +1,706 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+#map_canvas img {
+  max-width: none;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+nav#main-navigation {
+  font-family: "nimbus-sans-condensed", sans-serif;
+  height: 75px;
+  line-height: 75px;
+  background-color: #000000;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  border-bottom: 1px solid #000000;
+  width: 100%;
+  z-index: 1030;
+  -webkit-box-shadow: 0px 0px 2px #555555;
+  -moz-box-shadow: 0px 0px 2px #555555;
+  box-shadow: 0px 0px 2px #555555;
+  background-color: #0d0d0d;
+  background-image: -moz-linear-gradient(top, #151515, #000000);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#151515), to(#000000));
+  background-image: -webkit-linear-gradient(top, #151515, #000000);
+  background-image: -o-linear-gradient(top, #151515, #000000);
+  background-image: linear-gradient(to bottom, #151515, #000000);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff151515', endColorstr='#ff000000', GradientType=0);
+}
+/* LOGO
+***************************************************************************/
+nav #logo,
+nav #logo span {
+  font-family: "nimbus-sans-condensed", sans-serif;
+  font-size: 37.5px;
+  text-decoration: none;
+}
+nav #gainesville {
+  color: #a54e00;
+}
+nav #startups {
+  color: #444;
+}
+/* LOGIN
+***************************************************************************/
+nav#main-navigation #login {
+  color: #555555;
+}
+nav#main-navigation #login a {
+  color: #555555;
+}
+nav#main-navigation #login a:hover {
+  color: #999999;
+}
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+/* #Base 960 Grid
+================================================== */
+.container {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+.container .column,
+.container .columns {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.row {
+  margin-bottom: 20px;
+}
+/* Nested Column Classes */
+.column.alpha,
+.columns.alpha {
+  margin-left: 0;
+}
+.column.omega,
+.columns.omega {
+  margin-right: 0;
+}
+/* Base Grid */
+.container .one.column,
+.container .one.columns {
+  width: 40px;
+}
+.container .two.columns {
+  width: 100px;
+}
+.container .three.columns {
+  width: 160px;
+}
+.container .four.columns {
+  width: 220px;
+}
+.container .five.columns {
+  width: 280px;
+}
+.container .six.columns {
+  width: 340px;
+}
+.container .seven.columns {
+  width: 400px;
+}
+.container .eight.columns {
+  width: 460px;
+}
+.container .nine.columns {
+  width: 520px;
+}
+.container .ten.columns {
+  width: 580px;
+}
+.container .eleven.columns {
+  width: 640px;
+}
+.container .twelve.columns {
+  width: 700px;
+}
+.container .thirteen.columns {
+  width: 760px;
+}
+.container .fourteen.columns {
+  width: 820px;
+}
+.container .fifteen.columns {
+  width: 880px;
+}
+.container .sixteen.columns {
+  width: 940px;
+}
+.container .one-third.column {
+  width: 300px;
+}
+.container .two-thirds.column {
+  width: 620px;
+}
+/* Offsets */
+.container .offset-by-one {
+  padding-left: 60px;
+}
+.container .offset-by-two {
+  padding-left: 120px;
+}
+.container .offset-by-three {
+  padding-left: 180px;
+}
+.container .offset-by-four {
+  padding-left: 240px;
+}
+.container .offset-by-five {
+  padding-left: 300px;
+}
+.container .offset-by-six {
+  padding-left: 360px;
+}
+.container .offset-by-seven {
+  padding-left: 420px;
+}
+.container .offset-by-eight {
+  padding-left: 480px;
+}
+.container .offset-by-nine {
+  padding-left: 540px;
+}
+.container .offset-by-ten {
+  padding-left: 600px;
+}
+.container .offset-by-eleven {
+  padding-left: 660px;
+}
+.container .offset-by-twelve {
+  padding-left: 720px;
+}
+.container .offset-by-thirteen {
+  padding-left: 780px;
+}
+.container .offset-by-fourteen {
+  padding-left: 840px;
+}
+.container .offset-by-fifteen {
+  padding-left: 900px;
+}
+/* #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 300px;
+  }
+  .container .columns,
+  .container .column {
+    margin: 0;
+  }
+  .container .one.column,
+  .container .one.columns,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .thirteen.columns,
+  .container .fourteen.columns,
+  .container .fifteen.columns,
+  .container .sixteen.columns,
+  .container .one-third.column,
+  .container .two-thirds.column {
+    width: 300px;
+  }
+  /* Offsets */
+  .container .offset-by-one,
+  .container .offset-by-two,
+  .container .offset-by-three,
+  .container .offset-by-four,
+  .container .offset-by-five,
+  .container .offset-by-six,
+  .container .offset-by-seven,
+  .container .offset-by-eight,
+  .container .offset-by-nine,
+  .container .offset-by-ten,
+  .container .offset-by-eleven,
+  .container .offset-by-twelve,
+  .container .offset-by-thirteen,
+  .container .offset-by-fourteen,
+  .container .offset-by-fifteen {
+    padding-left: 0;
+  }
+}
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 420px;
+  }
+  .container .columns,
+  .container .column {
+    margin: 0;
+  }
+  .container .one.column,
+  .container .one.columns,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .thirteen.columns,
+  .container .fourteen.columns,
+  .container .fifteen.columns,
+  .container .sixteen.columns,
+  .container .one-third.column,
+  .container .two-thirds.column {
+    width: 420px;
+  }
+}
+/* #Clearing
+================================================== */
+/* Self Clearing Goodness */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+.row,
+.clearfix {
+  zoom: 1;
+}
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+footer {
+  float: left;
+  margin-top: 100px;
+}
+footer nav {
+  background-color: none;
+  text-align: center;
+  border-top: 1px solid #999999;
+}
+footer nav div {
+  padding: 10px 0px 30px 0;
+}
+footer nav a {
+  color: #555555;
+}
+footer nav a:hover {
+  color: black;
+}
+#intro-video {
+  width: 622px;
+  height: 350px;
+  margin: 0 auto;
+  background-color: #000000;
+  border-top: 1px solid #999999;
+}
+#intro-video iframe {
+  border-top: 1px solid white;
+}
+.project-overview {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+.project-overview:hover {
+  border: 1px solid #999999;
+  -webkit-box-shadow: 0px 0px 3px #d9d9d9;
+  -moz-box-shadow: 0px 0px 3px #d9d9d9;
+  box-shadow: 0px 0px 3px #d9d9d9;
+}
+.project-overview:hover a {
+  color: #005580;
+}
+.project-image {
+  padding: 8px;
+}
+.project-overview h2 {
+  margin-top: 3.125px;
+  margin-bottom: 6.25px;
+}
+.project-overview h4 {
+  margin: 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #999999;
+}
+.project-overview p {
+  margin-top: 0;
+  margin-bottom: 12.5px;
+}
+.project-description {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0px 8px;
+}
+.project-footer {
+  background-color: #f6f6f6;
+  height: 50px;
+  padding: 8px;
+  border-top: 1px solid #ffffff;
+}
+.ui-progressbar {
+  height: 6.25px;
+}
+.project-footer .percent,
+.project-footer .pledged,
+.project-footer .time-left {
+  display: inline-block;
+  width: 90px;
+  color: #555555;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 4.166666666666667px;
+}
+#sidebar {
+  font-family: "cronos-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#sidebar li {
+  list-style-type: none;
+  margin-bottom: 25px;
+}
+#sidebar .widget_wdf_fundraiser_panel {
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+/* BIG NUMBER
+******************************************************************************/
+#sidebar .wdf_big_num {
+  font-size: 50px;
+  color: #555555;
+  line-height: 40px;
+}
+/* TOTAL BACKERS
+******************************************************************************/
+#sidebar .wdf_total_backers,
+#sidebar .wdf_amount_raised {
+  margin-bottom: 12.5px;
+}
+#sidebar .wdf_total_backers p,
+#sidebar .wdf_amount_raised p {
+  color: #999999;
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+}
+/* BACKER BUTTON
+******************************************************************************/
+#sidebar .wdf_backer_button {
+  text-align: center;
+  background-color: #a54e00;
+  padding: 10px 0px;
+  margin-top: 25px;
+}
+#sidebar .wdf_button {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+#sidebar .wdf_button small {
+  font-weight: 200;
+}
+/* LEVELS 
+*************************************************************************/
+#sidebar .level {
+  color: #555555;
+  border-bottom: 1px solid #ccc;
+  padding: 12.5px 10px;
+}
+#sidebar .level:hover {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#sidebar .level .value {
+  font-size: 20px;
+}
+.single p {
+  line-height: 25px;
+  font-size: 18px;
+}
+.single #lipsum img {
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  margin: 10px 20px;
+  padding: 5px;
+}
+.single #lipsum img.alignleft {
+  margin-left: 0px;
+}
+.single #lipsum img.alignright {
+  margin-right: 0px;
+}
+body {
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+  background-image: url('images/bg.png');
+  background-repeat: repeat;
+}
+p,
+span,
+input,
+form,
+button,
+footer {
+  font-family: "cronos-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #555555;
+  font-weight: 200;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "cronos-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #555555;
+}
+h2 {
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: #0088cc;
+}
+a:hover {
+  color: #005580;
+}
+/* PULLS
+****************************************************************/
+.pull-right,
+.alignright {
+  float: right;
+}
+.pull-left,
+.alignleft {
+  float: left;
+}
+/* FRONT PAGE
+****************************************************************/
+#main-tagline {
+  font-family: "cronos-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  color: #a54e00;
+  text-align: center;
+  margin-top: 75px;
+  font-weight: 200;
+}
+#view-projects {
+  padding: 30px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #a54e00;
+  margin-top: 25px;
+}
+form input {
+  border: none;
+  padding: 10px;
+  width: 285px;
+  font-size: 22px;
+  font-weight: 200;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0px 0px 8px #000000;
+  -moz-box-shadow: inset 0px 0px 8px #000000;
+  box-shadow: inset 0px 0px 8px #000000;
+  margin-right: 20px;
+}
+form button {
+  background-color: black;
+  border: none;
+  color: #999999;
+  padding: 10px;
+  width: 307px;
+  font-size: 22px;
+}
+form button:hover {
+  color: #eeeeee;
+}
+#steps {
+  background-color: #ffffff;
+  margin-top: 50px;
+  float: left;
+}
+#steps p {
+  line-height: 31.25px;
+  font-size: 18px;
+}
+.step {
+  padding: 0px 15px;
+}

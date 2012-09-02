@@ -1,0 +1,100 @@
+body {
+    background-color: @bodyBackground;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bg.png');
+    background-repeat: repeat;
+}
+
+p, span, input, form, button, footer {
+    font-family: @sansFontFamily;
+    color: @gray;
+    font-weight: 200;
+}
+
+h1, h2, h3, h4 {
+    font-family: @sansFontFamily;
+    font-weight: bold;
+    color: @gray;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: @linkColor;
+}
+
+a:hover {
+    color: @linkColorHover;
+}
+
+/* PULLS
+****************************************************************/
+.pull-right, .alignright {
+    float: right;
+}
+
+.pull-left, .alignleft {
+    float: left;
+}
+
+/* FRONT PAGE
+****************************************************************/
+#main-tagline {
+    font-family: @sansFontFamily;
+    font-size: 22px;
+    line-height: 22px;
+    color: @orange;
+    text-align: center;
+    margin-top: @baseLineHeight * 3;
+    font-weight: 200;
+}
+
+#view-projects {
+    padding: 30px;
+    .border-radius( 20px );
+    background-color: @orange;
+    margin-top: @baseLineHeight;
+}
+
+form input {
+    border: none;
+    padding: 10px;
+    width: 285px;
+    font-size: 22px;
+    font-weight: 200;
+    .border-radius( 4px );
+    .box-shadow( inset 0px 0px 8px #000 );
+    margin-right: 20px;
+}
+
+form button {
+    background-color: black;
+    border: none;
+    color: @grayLight;
+    padding: 10px;
+    width: 307px;
+    font-size: 22px;
+}
+
+form button:hover {
+    color: @grayLighter;
+}
+
+#steps {
+    background-color: @white;
+    margin-top: @baseLineHeight * 2;
+    float: left;
+}
+
+#steps p {
+    line-height: @baseLineHeight * 1.25;
+    font-size: 18px;
+}
+
+.step {
+    padding: 0px 15px;
+}

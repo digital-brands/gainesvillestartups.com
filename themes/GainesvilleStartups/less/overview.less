@@ -1,0 +1,61 @@
+.project-overview {
+    background-color: @white;
+    border: 1px solid lighten( @grayLight, 20% );
+    cursor: pointer;
+    margin-bottom: @baseLineHeight;
+}
+
+.project-overview:hover {
+    border: 1px solid lighten( @grayLight, 0% );
+    .box-shadow( 0px 0px 3px lighten( @grayLight, 25% ) );
+}
+.project-overview:hover a {
+    color: @linkColorHover;
+}
+
+.project-image {
+    padding: 8px;
+}
+
+.project-overview h2 { 
+    margin-top: @baseLineHeight / 8;
+    margin-bottom: @baseLineHeight / 4;
+}
+
+.project-overview h4 {
+    margin: 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: @grayLight;
+}
+
+.project-overview p {
+    margin-top: 0;
+    margin-bottom: @baseLineHeight / 2;
+}
+
+.project-description {
+    border-bottom: 1px solid lighten( @grayLight, 25% );
+    padding: 0px 8px;
+}
+
+.project-footer {
+    background-color: #f6f6f6;
+    height: @baseLineHeight * 2;
+    padding: 8px;
+    border-top: 1px solid @white;
+}
+
+.ui-progressbar {
+    height: @baseLineHeight / 4;
+}
+
+.project-footer .percent, .project-footer .pledged, .project-footer .time-left {
+    display: inline-block;
+    width: 90px;
+    color: @gray;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: @baseLineHeight / 6;
+}
