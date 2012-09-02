@@ -1,4 +1,101 @@
 Plugin Name: Fundraising
 Author: Cole Stevenson (Incsub)
 
-74392-1332789719
+== Changelog ==
+
+= 2.1.8 =
+Fixed issue with fundraisers with goals not showing in shortcode generator
+Fixed problem with styles not loading in particular situations
+Custom css styling available, but simply adding a css file to /styles folder, see fundraising-templates.txt for more info
+
+= 2.1.7 =
+Shortcode generator now inserts properly into both the HTML and Visual editor
+Fixed problem with above/below content option not displaying the current setting
+Backer Label now displays a singular label when only one pledge has been taken
+Fixed issue with displaying email settings correctly
+
+= 2.1.6 =
+Fixed bug with not allowing more than 10 rewards
+
+= 2.1.5 =
+Fundraising now has it's own metabox in your Theme's Appearance Menus
+Multiple php warning fixes
+Corrected x.com links for creating an application
+Added the ability to set checkout type per fundraiser
+Fixed currency display issues
+Better display of options on the shortcode generator pop-up
+Small change to menu order due to compatibility errors with other plugins and hosting services
+New fundraising-templates.txt file in root folder that explains the template hierarchy
+
+
+= 2.1.1 =
+Fixed Manual Pledge Payments
+Rewards and Goals can now be set independently of each other
+
+
+= 2.1 =
+Fixed Canadian Currency Issue
+New plugin labeling system
+Fixed HTML structure error on checkout pages
+Added global custom CSS box in presentation settings (better styles in next release)
+Added Minutes to wdf_time_left()
+Changed Featured Fundraisers widget to Fundraiser List
+
+
+= 2.0-RC-3 =
+Paypal error codes now correctly display if redirection fails.
+
+Fixed headers already sent error with certain themes.
+
+Simple Fundraisers can now use rewards and goals again
+- Advanced Payments still may not change goals and rewards if the fundraiser has been published and pledges have already been taken.
+
+New wdf_has_date_range() template function.
+
+Added new option in presentation settings for checking out directly from the fundraising panel.
+
+
+= 2.0-RC-2 =
+Fixed issues with PayPal App ID not saving.
+
+Fixed problem with PayPal redirect on certain server setups
+
+
+= 2.0-RC-1 =
+New Payment Gateway API
+- Fundraisers are now split into two types: Simple and Advanced
+- Simple payments are donations that are accepted immediately. ( No Goals or Rewards )
+- Advanced Payments are pre-approved and only processed after the completion of the fundraiser's goal. ( Goals and Rewards allowed )
+
+Donations are now refered to as pledges.
+- 4 new pledge statuses are available.  ( Complete, Approved, Canceled, Refunded )
+
+New Fundraising Panel
+- Use either a shortcode or widget to display relevant fundraiser information
+
+New Reset option for clearing all fundraising data
+- add define('WDF_ALLOW_RESET',true); in your wp-config file to add an extra reset tab to your settings page.
+
+Limited BuddyPress Integration
+- Users are allow to publicly display their plegde as an activity item if they choose to do so.  This option display requires that BuddyPress be activated on your site.
+
+CSS style containers are now all <div> elements to allow for easier customization.
+
+New permalink structure
+- Each fundraiser now contains a checkout and confirmation page.
+
+Template functions can now be overridden using the action 'wdf_custom_template_functions'
+- fundraiser.php line: 1521
+
+Fixed shortcode media button errors
+
+New custom template structure for your theme
+- wdf_funder-{$name/$id}.php
+- wdf_checkout-{$name/$id}.php
+- wdf_confirm-{$name/$id}.php
+
+Addition of several action and filter hooks for external plugins or theme function files.
+
+62863-1338483608
+
+32536-1346051460-au

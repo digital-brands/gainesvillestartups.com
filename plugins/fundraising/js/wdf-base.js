@@ -22,11 +22,13 @@ jQuery(document).ready( function($) {
 		}
 	};
 	
-	$('.wdf_levels li.item').bind('click', function(e) {
+	$('.wdf_rewards .wdf_reward_item').bind('click', function(e) {
 		var _this = $(this);
 		var rel = _this.find('.wdf_level_amount').attr('rel');
-		_this.parent().find('input.wdf_send_amount').val(rel);
-		_this.parent().find('#level_select').val($(this).index() - 1);
+		var pledge = _this.parent().find('input.wdf_pledge_amount');
+		_this.parent().find('input.wdf_pledge_amount').val(rel);
+			
+		_this.find('input:radio').prop('checked', true);
 	});
 	
 	var donate_inputs = $('.wdf_donate_amount');
@@ -50,14 +52,10 @@ jQuery(document).ready( function($) {
 		var _this = $(this);
 		var initVal = _this.val();
 		if(e.type == 'focusin') {
-			//_this.val('')
+			
 		} else if(e.type == 'focusout') {
-			//console.log(e.type);
-			//if(_this.val() != initVal) {
-				
-			//}
+			
 		} else {
-			//console.log(e);
 		}
 	});
 });
